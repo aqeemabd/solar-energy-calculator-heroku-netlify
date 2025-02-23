@@ -6,6 +6,8 @@ const mysql = require("mysql2");
 const dotenv = require("dotenv");
 const cors = require("cors");
 
+const PORT = process.env.PORT || 4000;
+
 // Enable CORS for cross-origin requests
 app.use(cors());
 
@@ -74,6 +76,6 @@ app.post("/v1/savings", (req, res) => {
 });
 
 // Start the server and listen on the specified port
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Server started at http://localhost:${port}`);
 });
