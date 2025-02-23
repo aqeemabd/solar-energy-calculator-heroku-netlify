@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("savingsModal").style.display = "none";
 });
@@ -178,7 +180,7 @@ const post_data = (
     state: state,
   };
 
-  fetch("https://solar-energy-calculator-heroku-024f12e644e0.herokuapp.com/v1/savings", {
+  fetch(`${process.env.URL}/v1/savings`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
