@@ -178,7 +178,7 @@ const post_data = (
     state: state,
   };
 
-  fetch("http://localhost:4000/v1/savings", {
+  fetch("https://solar-energy-calculator-heroku-024f12e644e0.herokuapp.com/v1/savings", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
