@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("savingsModal").style.display = "none";
 });
